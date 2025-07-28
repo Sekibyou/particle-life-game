@@ -12,10 +12,10 @@ export class BaseParticle {
         this.lineColor = lineColor;
         this.connectionCount = 0;
         
-        this.vx = random(-0.5, 0.5);
-        this.vy = random(-0.5, 0.5);
+        this.vx = random(-0.15, 0.15);
+        this.vy = random(-0.15, 0.15);
         
-        this.mass = random(4, 7); 
+        this.mass = random(6, 8); 
     }
 
     update() {

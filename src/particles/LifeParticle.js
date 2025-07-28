@@ -48,14 +48,14 @@ export class LifeParticle extends BaseParticle {
     
     reproduce() {
         if (this.hp >= this.maxHp) {
-            const cost = this.maxHp * random(0.33, 0.50);
+            const cost = this.maxHp * random(0.4, 0.6);
             this.hp -= cost;
             const newParticle = new LifeParticle(this.x, this.y, cost);
             
             // 给新生粒子一个随机方向的初速度
             const angle = Math.random() * Math.PI * 2;
-            newParticle.vx = Math.cos(angle) * 0.05;
-            newParticle.vy = Math.sin(angle) * 0.05;
+            newParticle.vx = Math.cos(angle) * 0.001;
+            newParticle.vy = Math.sin(angle) * 0.001;
             
             return newParticle;
         }
