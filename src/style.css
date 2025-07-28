@@ -1,0 +1,18 @@
+/* src/style.css */
+
+/* 重置 body 默认的边距和内边距 */
+body {
+    margin: 0;
+    padding: 0;
+    /* 隐藏可能出现的滚动条 */
+    overflow: hidden;
+    /* 设置背景为深色，以突出粒子效果 */
+    background-color: #111;
+}
+
+/* 让 canvas 元素以块级形式显示，并铺满整个屏幕 */
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
