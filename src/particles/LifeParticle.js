@@ -21,7 +21,7 @@ export class LifeParticle extends BaseParticle {
 
     update(canvasWidth, canvasHeight) {
         // 更新生命值
-        if (this.connectionCount === 0 || this.connectionCount >= 3) {
+        if (this.connectionCount === 0 || this.connectionCount >= 4) {
             this.hp -= HP_DECAY_RATE;
         } else {
             this.hp += HP_REGEN_RATE;
