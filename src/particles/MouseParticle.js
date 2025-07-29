@@ -6,7 +6,7 @@ export class MouseParticle extends BaseParticle {
         super(x, y, 0, 'rgba(100, 180, 255, 1)', '100, 180, 255');
         this.vx = 0;
         this.vy = 0;
-        this.mass = 5;
+        this.mass = 30;
     }
 
     update(mouseX, mouseY) {
